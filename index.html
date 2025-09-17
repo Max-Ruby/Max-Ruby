@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Max Ruby's Projects and Publications</title>
+
+	<link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body>
+
+      
+<div class="main">
+   
+      	<img src="static/logo.png">
+	<p>Welcome to Max Ruby's Website!</p>
+	<p>I am an Image Scientist who is currently spinning up a project related to Image Forensics.</p>
+	<p>This github page is a simple portfolio, and over time this will evolve into a more elaborate website.</p>
+	<h1>Academic work:</h1>
+	<p>What follows is the work that I did when I was a student. The descriptions of the research are in plain language. </p>
+
+      <h2>MU-Net:</h2>
+      <p>The MU-Net paper is <a href="static/2002.12257v1.pdf">here.</a></p>
+      <p>We had a camera array that took three pictures of a person in a car. We wanted to identify them through the windshield.</p>
+      <p>Part of the scheme was that we wanted to fuse these pictures together and get a "good" picture of the person's face. This couldn't be done reliably with only one camera, primarily due to things like camera glare - we could set up the polarizer lenses to block some of the glare, but the glare that was blocked would change based on how the polarizer lens was set up.</p>
+      <p>We had an algorithm that does HDR fusion - Mertens - but it wasn't performing sufficiently well for our problem.</p>
+      <p>I pointed out that we could improve upon this by developing a neural network which performs essentially this algorithm - by cleverly building a custom network with weights handpicked to initialize to that algorithm - and then train it so that it outperforms the conventional algorithm.</p>
+      <p>This worked well - the MU-Net's HDR improved the face recognition's AUROC by 37% - and it's probably one of the more theoretically interesting pieces of work I've put out.</p>
+
+      <h2>Deep Backprojection:</h2>
+      <p>The Deep Backprojection paper is <a href="static/1807.02370v1.pdf">here.</a></p>
+      <p>The idea is that we might be able to train a neural network to do the inverse radon transform better if we feed the network an intermediate result of the standard algorithm.</p>
+      <p>This appears to have worked reasonably well; the PSNR improved by about 1.4dB on average, compared to the standard Filtered Back Projection algorithm.</p>
+
+      <h1>Projects:</h1>
+      <p>What follows is a list of my projects.</p>
+
+      <h2>RIFT:</h2>
+      <p>I am currently working on a toolkit for Image Forensics.</p>
+      <p>The first step of this is independent testing of some of the research in this area.</p>
+      <p>However, a few of the older, conventional tools are already implemented.</p>
+
+      <h1>Contact Info:</h1>
+      <p>It's in my resume, which is <a href="static/Max_Ruby_Resume.pdf">here</a></p>
+
+      <h2>Contact me if:</h2>
+      <p>1) You are an image science researcher who wants to collaborate.</p>
+      <p>2) You have found a bug in my code or an error in one of my projects. </p>
+      <p>3) You are an engineer/programmer working for an organization in charge of developing similar tools and have questions.</p>
+
+  </div>
+
+ 
+</body>
+</html>
